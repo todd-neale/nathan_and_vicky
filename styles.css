@@ -36,7 +36,7 @@ body {
     color: var(--text-dark);
     background-color: var(--cream);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* Navigation */
@@ -121,16 +121,18 @@ body {
 
 /* Home Page Hero */
 .hero-home {
-    min-height: 100vh;
+    height: 100vh;
+    height: 100dvh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     position: relative;
     background-image: url('images/dried_background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 40px 2rem 4rem;
+    padding: 2rem;
+    overflow: hidden;
 }
 
 .flower-corner {
@@ -168,15 +170,13 @@ body {
 .hero-content {
     text-align: center;
     z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 /* Card Flip Container */
 .card-flip-container {
     perspective: 2000px;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .card-flipper {
@@ -209,6 +209,7 @@ body {
     transform: rotateY(-180deg);
     max-height: 85vh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .card-back-scroll {
@@ -240,7 +241,7 @@ body {
 }
 
 .card-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-footer {
@@ -1266,10 +1267,6 @@ body {
         padding: 0.5rem 1.3rem;
     }
     
-    .invitation-card {
-        padding: 3rem 2rem;
-    }
-    
     .wedding-details {
         flex-direction: column;
         gap: 1.5rem;
@@ -1316,6 +1313,10 @@ body {
 
     .button {
         width: 100%;
+    }
+
+    .hero-home {
+        padding: 1.5rem;
     }
 
     .info-page {

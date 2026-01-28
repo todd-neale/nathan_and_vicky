@@ -36,7 +36,7 @@ body {
     color: var(--text-dark);
     background-color: var(--cream);
     line-height: 1.6;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -208,8 +208,11 @@ body {
     width: 100%;
     transform: rotateY(-180deg);
     max-height: 85vh;
-    overflow-y: auto;
+    max-height: 85dvh;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
 }
 
 .card-back-scroll {

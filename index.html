@@ -9,181 +9,177 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gwendolyn&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Hero Section -->
-    <section class="hero-home">
-        <div class="hero-content">
-            <div class="card-flip-container">
-                <div class="card-flipper" id="cardFlipper">
-                    <!-- Front of card -->
-                    <div class="invitation-card card-front">
-                        <div class="card-header">
-                            <img src="images/divider_transparent.png" alt="" class="leaf-divider">
-                        </div>
-
-                        <p class="invite-text">Please join us for the wedding of</p>
-
-                        <h1 class="couple-names">
-                            Nathan <span class="ampersand">&</span> Vicky
-                        </h1>
-
+<body class="home-page">
+    <main class="main-content">
+        <div class="card-flip-container">
+            <div class="card-flipper" id="cardFlipper">
+                <!-- Front of card -->
+                <div class="invitation-card card-front">
+                    <div class="card-header">
                         <img src="images/divider_transparent.png" alt="" class="leaf-divider">
-
-                        <div class="wedding-details-simple">
-                            <p class="wedding-date">Saturday, 22nd August 2026, 2pm</p>
-                            <p class="wedding-venue">Hope Farm, Bridport, Dorset</p>
-                        </div>
-
-                        <div class="countdown-box">
-                            <div class="countdown" id="countdown"></div>
-                        </div>
-
-                        <div class="home-cta mt">
-                            <a href="rsvp.html" class="button button-primary">RSVP Now</a>
-                            <button class="button button-secondary" id="flipToBack">More Info</button>
-                        </div>
-
-                        <div class="card-footer">
-                            <img src="images/divider_transparent.png" alt="" class="leaf-divider">
-                        </div>
                     </div>
 
-                    <!-- Back of card -->
-                    <div class="invitation-card card-back">
-                        <div class="card-back-scroll">
-                            <button class="back-arrow" id="backArrow" title="Flip back">&larr;</button>
-                            <!-- Venue -->
-                            <h2 class="info-section-title">Venue</h2>
-                            <p class="venue-name-large">Hope Farm Rural Wedding Venue</p>
-                            <p class="info-text">Bridport, DT6 5LZ</p>
-                            <p class="what3words">what3words: clouding.drumbeat.moderated</p>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=50.791547,-2.742780" target="_blank" class="directions-link">Get Directions</a>
-                            <div class="venue-details">
-                                <p>Parking on site at the top field of the venue - a member of the team will greet you there.</p>
-                                <p><strong>Pre-ordering taxis/Uber is highly advised due to the rural location.</strong></p>
-                            </div>
+                    <p class="invite-text">Please join us for the wedding of</p>
 
-                            <div class="section-divider">
-                                <img src="images/divider_transparent.png" alt="" class="leaf-divider">
-                            </div>
+                    <h1 class="couple-names">
+                        Nathan <span class="ampersand">&</span> Vicky
+                    </h1>
 
-                            <!-- Order of the Day -->
-                            <h2 class="info-section-title">Order of the Day</h2>
-                            <div class="timeline-simple">
-                                <div class="timeline-item">
-                                    <span class="time">1:30 PM</span>
-                                    <span class="event">Guest Arrival</span>
-                                </div>
-                                <div class="timeline-item highlight">
-                                    <span class="time">2:00 PM</span>
-                                    <span class="event">Wedding Ceremony</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="time">2:30 PM</span>
-                                    <span class="event">Drinks & Canapes</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="time">4:00 PM</span>
-                                    <span class="event">BBQ Feast</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="time">7:00 PM</span>
-                                    <span class="event">Disco!</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="time">7:30 PM</span>
-                                    <span class="event">Pizza & Cocktails</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="time">11:30 PM</span>
-                                    <span class="event">Home Time</span>
-                                </div>
-                            </div>
-                            <p class="info-note">We've set up a special Kids Corner with teepees, Duplo and Lego, colouring activities, bubbles, and books!</p>
+                    <img src="images/divider_transparent.png" alt="" class="leaf-divider">
 
-                            <div class="section-divider">
-                                <img src="images/divider_transparent.png" alt="" class="leaf-divider">
-                            </div>
+                    <div class="wedding-details-simple">
+                        <p class="wedding-date">Saturday, 22nd August 2026, 2pm</p>
+                        <p class="wedding-venue">Hope Farm, Bridport, Dorset</p>
+                    </div>
 
-                            <!-- Food & Drink -->
-                            <h2 class="info-section-title">Food & Drink</h2>
-                            <h3 class="info-subtitle">BBQ Feast</h3>
-                            <div class="menu-columns">
-                                <div class="menu-column">
-                                    <h4>Mains</h4>
-                                    <ul>
-                                        <li>16 hour smoked brisket</li>
-                                        <li>Harissa chicken thighs</li>
-                                        <li>Asian roast pork</li>
-                                        <li>Thai satay tofu skewers</li>
-                                    </ul>
-                                </div>
-                                <div class="menu-column">
-                                    <h4>Sides</h4>
-                                    <ul>
-                                        <li>Roasted potatoes with garlic and thyme</li>
-                                        <li>Moroccan tabouli</li>
-                                        <li>Medley of roasted vegetables</li>
-                                        <li>BBQ sweetcorn wheels</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p class="info-note">Sausages and cheeseburgers for the little ones! Please let us know about any dietary requirements when you RSVP.</p>
-                            <h3 class="info-subtitle">Drinks</h3>
-                            <p class="info-text">Our bar accepts both cash and card. Special cocktails available from 7:30 PM!</p>
+                    <div class="countdown-box">
+                        <div class="countdown" id="countdown"></div>
+                    </div>
 
-                            <div class="section-divider">
-                                <img src="images/divider_transparent.png" alt="" class="leaf-divider">
-                            </div>
+                    <div class="home-cta mt">
+                        <a href="rsvp.html" class="button button-primary">RSVP Now</a>
+                        <button class="button button-secondary" id="flipToBack">More Info</button>
+                    </div>
 
-                            <!-- Accommodation -->
-                            <h2 class="info-section-title">Where to Stay</h2>
-                            <p class="info-text">Book early - August is peak season in beautiful Dorset!</p>
-                            <div class="places-list">
-                                <div class="place-item">
-                                    <span class="place-name">Beaminster</span>
-                                    <span class="place-distance">5 mins</span>
-                                </div>
-                                <div class="place-item">
-                                    <span class="place-name">Bridport</span>
-                                    <span class="place-distance">11 mins</span>
-                                </div>
-                                <div class="place-item">
-                                    <span class="place-name">Crewkerne</span>
-                                    <span class="place-distance">18 mins</span>
-                                </div>
-                                <div class="place-item">
-                                    <span class="place-name">Charmouth</span>
-                                    <span class="place-distance">22 mins</span>
-                                </div>
-                                <div class="place-item">
-                                    <span class="place-name">Lyme Regis</span>
-                                    <span class="place-distance">28 mins</span>
-                                </div>
-                                <div class="place-item">
-                                    <span class="place-name">Ilminster</span>
-                                    <span class="place-distance">30 mins</span>
-                                </div>
-                                <div class="place-item">
-                                    <span class="place-name">Yeovil</span>
-                                    <span class="place-distance">30 mins</span>
-                                </div>
-                                <div class="place-item">
-                                    <span class="place-name">Dorchester</span>
-                                    <span class="place-distance">30 mins</span>
-                                </div>
-                            </div>
-                            <p class="info-note">Make a weekend of it! Explore the stunning Jurassic Coast and charming villages.</p>
+                    <div class="card-footer">
+                        <img src="images/divider_transparent.png" alt="" class="leaf-divider">
+                    </div>
+                </div>
 
-                            <div class="home-cta mt">
-                                <button class="button button-secondary" id="flipToFront">Back</button>
-                            </div>
+                <!-- Back of card -->
+                <div class="invitation-card card-back">
+                    <button class="back-arrow" id="flipToFront" title="Flip back">&larr;</button>
+
+                    <!-- Venue -->
+                    <h2 class="info-section-title">Venue</h2>
+                    <p class="venue-name-large">Hope Farm Rural Wedding Venue</p>
+                    <p class="info-text">Bridport, DT6 5LZ</p>
+                    <p class="what3words">what3words: clouding.drumbeat.moderated</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=50.791547,-2.742780" target="_blank" class="directions-link">Get Directions</a>
+                    <div class="venue-details">
+                        <p>Parking on site at the top field of the venue - a member of the team will greet you there.</p>
+                        <p><strong>Pre-ordering taxis/Uber is highly advised due to the rural location.</strong></p>
+                    </div>
+
+                    <div class="section-divider">
+                        <img src="images/divider_transparent.png" alt="" class="leaf-divider">
+                    </div>
+
+                    <!-- Order of the Day -->
+                    <h2 class="info-section-title">Order of the Day</h2>
+                    <div class="timeline-simple">
+                        <div class="timeline-item">
+                            <span class="time">1:30 PM</span>
+                            <span class="event">Guest Arrival</span>
                         </div>
+                        <div class="timeline-item highlight">
+                            <span class="time">2:00 PM</span>
+                            <span class="event">Wedding Ceremony</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">2:30 PM</span>
+                            <span class="event">Drinks & Canapes</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">4:00 PM</span>
+                            <span class="event">BBQ Feast</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">7:00 PM</span>
+                            <span class="event">Disco!</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">7:30 PM</span>
+                            <span class="event">Pizza & Cocktails</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">11:30 PM</span>
+                            <span class="event">Home Time</span>
+                        </div>
+                    </div>
+                    <p class="info-note">We've set up a special Kids Corner with teepees, Duplo and Lego, colouring activities, bubbles, and books!</p>
+
+                    <div class="section-divider">
+                        <img src="images/divider_transparent.png" alt="" class="leaf-divider">
+                    </div>
+
+                    <!-- Food & Drink -->
+                    <h2 class="info-section-title">Food & Drink</h2>
+                    <h3 class="info-subtitle">BBQ Feast</h3>
+                    <div class="menu-columns">
+                        <div class="menu-column">
+                            <h4>Mains</h4>
+                            <ul>
+                                <li>16 hour smoked brisket</li>
+                                <li>Harissa chicken thighs</li>
+                                <li>Asian roast pork</li>
+                                <li>Thai satay tofu skewers</li>
+                            </ul>
+                        </div>
+                        <div class="menu-column">
+                            <h4>Sides</h4>
+                            <ul>
+                                <li>Roasted potatoes with garlic and thyme</li>
+                                <li>Moroccan tabouli</li>
+                                <li>Medley of roasted vegetables</li>
+                                <li>BBQ sweetcorn wheels</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="info-note">Sausages and cheeseburgers for the little ones! Please let us know about any dietary requirements when you RSVP.</p>
+                    <h3 class="info-subtitle">Drinks</h3>
+                    <p class="info-text">Our bar accepts both cash and card. Special cocktails available from 7:30 PM!</p>
+
+                    <div class="section-divider">
+                        <img src="images/divider_transparent.png" alt="" class="leaf-divider">
+                    </div>
+
+                    <!-- Accommodation -->
+                    <h2 class="info-section-title">Where to Stay</h2>
+                    <p class="info-text">Book early - August is peak season in beautiful Dorset!</p>
+                    <div class="places-list">
+                        <div class="place-item">
+                            <span class="place-name">Beaminster</span>
+                            <span class="place-distance">5 mins</span>
+                        </div>
+                        <div class="place-item">
+                            <span class="place-name">Bridport</span>
+                            <span class="place-distance">11 mins</span>
+                        </div>
+                        <div class="place-item">
+                            <span class="place-name">Crewkerne</span>
+                            <span class="place-distance">18 mins</span>
+                        </div>
+                        <div class="place-item">
+                            <span class="place-name">Charmouth</span>
+                            <span class="place-distance">22 mins</span>
+                        </div>
+                        <div class="place-item">
+                            <span class="place-name">Lyme Regis</span>
+                            <span class="place-distance">28 mins</span>
+                        </div>
+                        <div class="place-item">
+                            <span class="place-name">Ilminster</span>
+                            <span class="place-distance">30 mins</span>
+                        </div>
+                        <div class="place-item">
+                            <span class="place-name">Yeovil</span>
+                            <span class="place-distance">30 mins</span>
+                        </div>
+                        <div class="place-item">
+                            <span class="place-name">Dorchester</span>
+                            <span class="place-distance">30 mins</span>
+                        </div>
+                    </div>
+                    <p class="info-note">Make a weekend of it! Explore the stunning Jurassic Coast and charming villages.</p>
+
+                    <div class="home-cta mt">
+                        <button class="button button-secondary" id="flipToFrontBottom">Back</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

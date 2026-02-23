@@ -1267,6 +1267,83 @@ body.home-page {
     padding: 2rem 0;
 }
 
+/* Accommodation List (card-back) */
+.accomm-list {
+    margin: 0.5rem 0 1rem;
+}
+
+.accomm-entry {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(164, 181, 160, 0.15);
+    text-align: left;
+}
+
+.accomm-entry:last-child {
+    border-bottom: none;
+}
+
+.accomm-name {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.accomm-detail {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    margin-top: 0.1rem;
+}
+
+.accomm-link {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    color: var(--sage);
+    text-decoration: none;
+    margin-top: 0.1rem;
+}
+
+.accomm-link:hover {
+    color: var(--terracotta);
+    text-decoration: underline;
+}
+
+/* Taxi List */
+.taxi-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 1.5rem;
+    margin: 1rem 0;
+}
+
+.taxi-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.taxi-name {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--text-dark);
+}
+
+.taxi-number {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    color: var(--sage);
+    text-decoration: none;
+}
+
+.taxi-number:hover {
+    color: var(--terracotta);
+    text-decoration: underline;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -1368,6 +1445,10 @@ body.home-page {
     }
 
     .places-list {
+        grid-template-columns: 1fr;
+    }
+
+    .taxi-list {
         grid-template-columns: 1fr;
     }
 }

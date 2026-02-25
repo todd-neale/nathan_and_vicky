@@ -1318,6 +1318,56 @@ body.home-page {
     text-decoration: underline;
 }
 
+/* Accommodation Accordion */
+.accomm-accordion {
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.accomm-section {
+    border-bottom: 1px solid rgba(164, 181, 160, 0.3);
+}
+
+.accomm-section:last-child {
+    border-bottom: none;
+}
+
+.accomm-summary {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 0.9rem;
+    color: var(--terracotta);
+    font-weight: 400;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.accomm-summary::-webkit-details-marker {
+    display: none;
+}
+
+.accomm-summary::after {
+    content: '+';
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--sage);
+    transition: transform 0.2s ease;
+}
+
+.accomm-section[open] .accomm-summary::after {
+    content: '−';
+}
+
+.accomm-section .accomm-list {
+    margin: 0 0 0.75rem;
+}
+
 /* Taxi List */
 .taxi-list {
     display: grid;

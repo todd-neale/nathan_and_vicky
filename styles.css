@@ -1132,10 +1132,11 @@ body.home-page {
     display: block;
     font-family: var(--font-body);
     font-size: 1.2rem;
-    color: var(--sage);
+    color: var(--forest);
     text-decoration: none;
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -1155,6 +1156,11 @@ body.home-page {
     color: var(--text-mid);
     margin-bottom: 0.5rem;
     line-height: 1.6;
+}
+
+.venue-details a {
+    color: var(--text-dark);
+    text-decoration: underline;
 }
 
 .section-divider {
@@ -1334,8 +1340,8 @@ body.home-page {
 
 .taxi-number {
     font-family: var(--font-body);
-    font-size: 0.82rem;
-    color: var(--sage);
+    font-size: 1rem;
+    color: var(--forest);
     text-decoration: none;
 }
 
